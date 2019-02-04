@@ -31,5 +31,11 @@
         android:title="Archive"
         app:showAsAction="never"
         />
+    <item
+        android:id="@+id/action_Language"
+        android:orderInCategory="100"
+        android:title="Translate"
+        app:showAsAction="never"
+        />
 
 </menu>

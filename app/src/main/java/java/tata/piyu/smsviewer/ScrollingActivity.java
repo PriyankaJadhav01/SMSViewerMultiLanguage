@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -44,9 +45,27 @@ public class ScrollingActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
             return true;
         }
         if(id==R.id.action_delete){
+            Toast.makeText(this, "Delete", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if(id==R.id.action_Edit){
+            Toast.makeText(this, "Edit", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if(id==R.id.action_Read){
+            Toast.makeText(this, "Mark All As Read", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if(id==R.id.action_Archive){
+            Toast.makeText(this, "Archive", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        if(id==R.id.action_Language){
+            Toast.makeText(this, "Language Changed", Toast.LENGTH_SHORT).show();
             return true;
         }
         return super.onOptionsItemSelected(item);
