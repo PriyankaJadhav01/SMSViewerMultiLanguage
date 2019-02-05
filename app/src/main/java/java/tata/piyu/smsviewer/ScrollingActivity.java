@@ -1,6 +1,8 @@
 package java.tata.piyu.smsviewer;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -46,6 +48,8 @@ public class ScrollingActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(Settings.ACTION_SETTINGS);
+            startActivity(intent);
             return true;
         }
         if(id==R.id.action_delete){
